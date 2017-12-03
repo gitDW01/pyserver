@@ -8,5 +8,6 @@ def hello():
 @app.route("/echo")
 def echo(): 
     return "You said: " + request.args.get('text', '')
- 
-app.run()
+
+if __name__ == "__main__": 
+app.run(environ.get('PORT'))
