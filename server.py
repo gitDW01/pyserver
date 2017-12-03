@@ -9,4 +9,4 @@ def hello():
 def echo(): 
     return "You said: " + request.args.get('text', '')
  
-app.run(environ.get('PORT'))
+app.run()
